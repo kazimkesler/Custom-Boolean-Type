@@ -8,7 +8,7 @@ namespace UI
 {
     internal class Program
     {
-        static Result check()
+        static Result Check()
         {
             Console.WriteLine("Run");
             return Result.OK("run");
@@ -21,7 +21,7 @@ namespace UI
             bool boolean = Result.OK();
             bool boolean1 = !Result.NotFound();
             Result and1 = Result.NotFound() && Result.BadRequest(); //return first wrong object, short-circuit
-            Result and2 = Result.NotFound() && check();//return first wrong object, short-circuit
+            Result and2 = Result.NotFound() && Check();//return first wrong object, short-circuit
             Result and3 = Result.OK() && Result.NotFound();//return first wrong object, short-circuit
             Result and4 = Result.OK() && Result.Created();//return Success object, short-circuit
 
