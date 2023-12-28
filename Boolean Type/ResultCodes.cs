@@ -2,9 +2,9 @@
 {
     public static class StatusCodeExtension
     {
-        public static bool IsSuccess(this StatusCode statusCode) => (int)statusCode / 100 == 2 || (int)statusCode == 1;
+        public static bool IsSuccess(this ResultCodes statusCode) => (int)statusCode / 100 == 2 || (int)statusCode == 1;
     }
-    public enum StatusCode
+    public enum ResultCodes
     {
         True = 1,
         False = 0,

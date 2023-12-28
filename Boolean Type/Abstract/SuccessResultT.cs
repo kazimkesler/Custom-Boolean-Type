@@ -2,7 +2,7 @@
 {
     internal abstract class SuccessResult<T> : Result<T>
     {
-        protected SuccessResult(StatusCode statusCode, T data, string message) : base(true, statusCode, message, data)
+        protected SuccessResult(ResultCodes statusCode, T data, string message) : base(true, statusCode, message, data)
         {
         }
     }

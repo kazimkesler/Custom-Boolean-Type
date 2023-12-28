@@ -4,11 +4,11 @@ namespace Core.Results.Concrete
 {
     internal sealed class NotFound : ErrorResult
     {
-        internal NotFound(string message) : base(StatusCode.NotFound, message)
+        internal NotFound(string message) : base(ResultCodes.NotFound, message)
         {
 
         }
-        internal NotFound() : base(StatusCode.NotFound, default)
+        internal NotFound() : base(ResultCodes.NotFound, default)
         {
 
         }

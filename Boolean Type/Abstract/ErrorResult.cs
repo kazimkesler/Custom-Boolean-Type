@@ -2,7 +2,7 @@
 {
     internal abstract class ErrorResult : Result
     {
-        protected ErrorResult(StatusCode statusCode, string message) : base(false, statusCode, message)
+        protected ErrorResult(ResultCodes statusCode, string message) : base(false, statusCode, message)
         {
         }
     }

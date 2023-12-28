@@ -2,12 +2,12 @@
 
 namespace Core.Results.Concrete
 {
-    internal sealed class OK<T> : SuccessResult<T>
+    internal sealed class Ok<T> : SuccessResult<T>
     {
-        internal OK(T data, string message) : base(StatusCode.OK, data, message)
+        internal Ok(T data, string message) : base(ResultCodes.OK, data, message)
         {
         }
-        internal OK(T data) : base(StatusCode.OK, data, default)
+        internal Ok(T data) : base(ResultCodes.OK, data, default)
         {
         }
     }

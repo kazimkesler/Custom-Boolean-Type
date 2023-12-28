@@ -4,11 +4,11 @@ namespace Core.Results.Concrete
 {
     internal sealed class Unauthorized : ErrorResult
     {
-        internal Unauthorized(string message) : base(StatusCode.Unauthorized, message)
+        internal Unauthorized(string message) : base(ResultCodes.Unauthorized, message)
         {
 
         }
-        internal Unauthorized() : base(StatusCode.Unauthorized, default)
+        internal Unauthorized() : base(ResultCodes.Unauthorized, default)
         {
 
         }

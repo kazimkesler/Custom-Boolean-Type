@@ -4,7 +4,7 @@ namespace Core.Results.Concrete
 {
     internal sealed class Success : SuccessResult
     {
-        internal Success() : base(StatusCode.True, default)
+        internal Success() : base(ResultCodes.True, default)
         {
         }
     }
